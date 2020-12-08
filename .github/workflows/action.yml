@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 'send alarm'
-        run: echo `ls -l` && ./sendweixin.sh ${{ secrets.SENDSECRET }}
+        run: bash ./sendweixin.sh ${{ secrets.SENDSECRET }}
 
 
 
