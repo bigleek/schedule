@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 'send alarm'
-        run: echo `ls -l`
+        run: ./sendweixin.sh
 
 
 #      - name: 'Checkout codes'
