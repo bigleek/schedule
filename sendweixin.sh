@@ -1,6 +1,6 @@
 #!/bin/sh
 
-curl https://sc.ftqq.com/SCU96259T18d83a81f1aba0b658fbcfe38f25a7ab5eacaaad55f17.send?text=要打卡了,微信别忘记
+curl https://sc.ftqq.com/$1.send?text=要打卡了,微信别忘记
 
 #set -eux
 #

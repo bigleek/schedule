@@ -10,8 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 'send alarm'
-        run: bash  curl 'https://sc.ftqq.com/SCU96259T18d83a81f1aba0b658fbcfe38f25a7ab5eacaaad55f17.send?text=要打卡了,
-        微信别忘记'
+        run: sendweixin.sh ${{ secrets.SENDSECRET }}
 
 
 
