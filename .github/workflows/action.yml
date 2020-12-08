@@ -10,7 +10,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 'send alarm'
-        run: bash  ${{ github.workspace }}/sendweixin.sh ${{ secrets.SENDSECRET }}
+        #        run: bash  ${{ github.workspace }}/sendweixin.sh ${{ secrets.SENDSECRET }}
+        run: |
+          git clone https://github.com/bigleek/schedule.git
+          cd schedule
+          ./sendweixin.sh ${{ secrets.SENDSECRET }}|
 
 
 
