@@ -1,7 +1,7 @@
 #!/bin/sh
 
-curl https://sc.ftqq.com/$1.send?text=要打卡了,微信别忘记
-
+#curl https://sc.ftqq.com/$1.send?text=要打卡了,微信别忘记
+curl https://sctapi.ftqq.com/$1.send?title=weixin&desp=要打卡了,微信别忘记
 #set -eux
 #
 #CITY=Shanghai
